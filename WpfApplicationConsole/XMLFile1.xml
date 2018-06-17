@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Books>
+  <Book>
+    <Name>语文</Name>
+    <Price>100</Price>
+    <Des>语文内容</Des>
+  </Book>
+  <Book>
+    <Name>数学</Name>
+    <Price>120</Price>
+    <Des>数学内容</Des>
+  </Book>
+  
+</Books>

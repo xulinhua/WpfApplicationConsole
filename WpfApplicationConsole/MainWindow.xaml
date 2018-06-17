@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApplicationConsole.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplicationConsole"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="700" Loaded="Window_Loaded">
+    <Grid Margin="0,0,-8,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="163*"/>
+             <ColumnDefinition Width="362*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnFileTest1" Content="文件写入测试1" HorizontalAlignment="Left" Height="25" Width="100" Margin="55,25,0,0" VerticalAlignment="Top" Click="btnFileTest_Click"/>
+        <Button x:Name="btnFileTest2" Content="文件写入测试2" HorizontalAlignment="Left" Height="25" Width="100" Margin="55,65,0,0" VerticalAlignment="Top" Click="btnFileTest2_Click"/>
+        <Label x:Name="lblText" Content="{Binding Path= Text1}" HorizontalAlignment="Left" Height="37" Width="294" Margin="12,25,0,0" VerticalAlignment="Top"  BorderThickness="5" Background="Beige" Grid.Column="2"/>
+
+        <Button x:Name="btnFileCopy" Content="文件复制" HorizontalAlignment="Left" Height="25" Width="100" Margin="55,130,0,0" VerticalAlignment="Top" Click="btnFileCopy_Click"/>
+        <Button x:Name="Multi" Content="多态测试" HorizontalAlignment="Left" Height="25" Width="100" Margin="55,160,0,0" VerticalAlignment="Top" Click ="Multi_Click"/>
+        <Button x:Name="btnShape" Content="求面积周长" HorizontalAlignment="Left" Height="25" Width="100" Margin="55,190,0,0" VerticalAlignment="Top" Click ="btnShape_Click"/>
+        <Button x:Name="btnSerialize" Content="序列化" HorizontalAlignment="Left" Height="25" Width="100" Margin="55,220,0,0" VerticalAlignment="Top" Click="btnSerialize_Click"/>
+        <Button x:Name="btnMD5" Content="MD5" HorizontalAlignment="Left" Height="25" Width="100" Margin="55,250,0,0" VerticalAlignment="Top" Click ="btnMD5_Click"/>
+        <Button x:Name="btnXML" Content="XML" HorizontalAlignment="Left" Height="25" Width="100" Margin="12,130,0,0" VerticalAlignment="Top" Click ="btnXML_Click" Grid.Column="2"/>
+        <Button x:Name="btnXML_Append" Content="XML追加" HorizontalAlignment="Left" Height="25" Width="100" Margin="12,168,0,0" VerticalAlignment="Top" Click  ="btnXML_Append_Click" Grid.Column="2" />
+        <Button x:Name="btnXML_Read" Content="XML读取" HorizontalAlignment="Left" Height="25" Width="100" Margin="10,203,0,0" VerticalAlignment="Top" Click ="btnXML_Read_Click"  Grid.Column="1" />
+        <Button x:Name="btnXML_ReadAttributes" Content="XML读取带属性" HorizontalAlignment="Left" Height="25" Width="100" Margin="10,250,0,0" VerticalAlignment="Top" Click ="btnXML_ReadAttributes_Click"  Grid.Column="1" />
+    </Grid>
+</Window>
